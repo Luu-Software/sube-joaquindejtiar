@@ -11,3 +11,8 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 boton.addEventListener("click", () => {
   // COMPLETAR
 });
+let reg = registrada.value
+let dis = distancia.value
+
+if (reg === "si")
+  
