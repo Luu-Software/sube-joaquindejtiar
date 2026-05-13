@@ -9,10 +9,37 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 */
 
 boton.addEventListener("click", () => {
-  // COMPLETAR
-});
-let reg = registrada.value
-let dis = distancia.value
 
-if (reg === "si")
+  if (registrada.value === "si") {
+    if (parseInt(distancia.value) <=3){
+tarifa.innerText= "$715.24"
+    }
+    else if (parseInt(distancia.value)<=6){
+    tarifa.innerText= "$794.74"
+    }
+    else if (parseInt(distancia.value)<=12){
+      tarifa.innerText= "$855.97"
+    }
+    else if (parseInt(distancia.value)<=27){
+      tarifa.innerText= "$917.24"
+    }
+  }
+else if (registrada.value === "no") {
+  if (parseInt(distancia.value) <=3) {
+    tarifa.innerText= "$1137.23"
+  }
+  else if (parseInt(distancia.value) <=6) {
+    tarifa.innerText= "$1263.64"
+  }
+  else if (parseInt(distancia.value) <=12) {
+    tarifa.innerText= "$1360.99"
+  }
+  else if (parseInt(distancia.value) <=27) {
+    tarifa.innerText= "1458.41"
+  }
+  }
+
+}
+);
+
   
